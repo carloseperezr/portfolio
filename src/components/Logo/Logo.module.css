@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+.navBarLogo{
+  font-size: 32px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.navBarLogo:hover{
+  color: #024268;
+  transition: 0.3s ease-in-out;
+}
+
+.footerLogo{
+  font-size: 68px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+
+}

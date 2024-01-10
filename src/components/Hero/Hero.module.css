@@ -1,0 +1,90 @@
+.heroContainer{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroWrapper{
+  margin-top: -200px;
+  padding: 0px 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.heroText{
+  z-index: 1;
+  position: absolute;
+  left: 10%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  max-width: 500px;
+  height: 60vh;
+  backdrop-filter: blur(5px);
+}
+
+.helloText{
+  text-transform: uppercase;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 24px;
+}
+
+.heroText h1{
+  padding: 20px 0px ;
+  width: 100%;
+  font-size: 80px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.heroText .infoText{
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-family: 'Nunito', sans-serif;
+  color: #024268;
+  font-weight: bold;
+  
+}
+
+.detailsText{
+  font-family: 'Nunito', sans-serif;
+  line-height: 30px;
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: #73655C;
+}
+
+.locationText{
+  font-family: 'Nunito', sans-serif;
+  padding: 20px 0px;
+  font-size: 20px;
+  color: #73655C;
+}
+
+.imgWrapper{
+  position: relative;
+  left: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+
+.imgWrapper img{
+  float: left;
+  max-width: 80%;
+}
+
+@media (max-width: 768px){
+  .heroText{
+    left: 0%;
+  }
+}
