@@ -1,0 +1,36 @@
+.aboutContainer{
+  width: 100%;
+  height: 80%;
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #A1C9DE;
+  background: radial-gradient(at center bottom, #A1C9DE, #FFFCF4);
+}
+
+.infoContainer{
+  width: 70%;
+  padding: 0px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: center;;
+}
+
+.infoContainer h1{
+  font-size: 48px;
+  padding: 20px ;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.infoContainer p{
+  font-family: 'Nunito', sans-serif;
+  width: 90%;
+  padding: 20px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: #73655C;
+}
+

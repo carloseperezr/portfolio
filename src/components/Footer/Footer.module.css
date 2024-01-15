@@ -1,8 +1,10 @@
 .footerContainer{
   width: 100%;
   height: 120px;
-  background-color: rgb(47, 47, 50);
+  background-color: #E3EDEE;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  font-family: 'Quicksand', sans-serif;
+
 }

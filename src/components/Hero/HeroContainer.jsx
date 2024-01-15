@@ -3,6 +3,7 @@ import {
   EmojioneWavingHand,
   TwemojiManTechnologistLightSkinTone,
 } from "../Emoji/Emoji";
+import { Button } from "../Buttons/Button";
 
 export const HeroContainer = () => {
   return (
@@ -21,6 +22,7 @@ export const HeroContainer = () => {
             digitales notables.
           </p>
           <p className={`${HeroCSS.locationText}`}>Bogotá, Col.</p>
+          <Button style="heroBtn" text="Trabajemos" />
         </div>
         <div className={`${HeroCSS.imgWrapper}`}>
           <img
