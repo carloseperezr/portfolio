@@ -1,25 +1,16 @@
 .navBarContainer{
-  position: static;
+  position: fixed;
   width: 100%;
   height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 999999;
+  z-index: 99999;
   background-color: transparent;
+  backdrop-filter: blur(5px);
 }
 
 .logoWrapper{
   padding: 0 40px;
 }
 
-.navBarMenu{
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  padding: 0 40px;
-  font-size: 32px;
-  cursor: pointer;
-}
