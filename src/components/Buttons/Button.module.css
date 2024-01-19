@@ -1,4 +1,4 @@
-.hireBtn{
+.hireBtn {
   padding: 10px;
   width: auto;
   text-align: center;
@@ -13,12 +13,12 @@
   transition: 0.2s ease-in-out;
 }
 
-.hireBtn:hover{
+.hireBtn:hover {
   transition: 0.2s ease-in-out;
   opacity: 90%;
 }
 
-.liveBtn{
+.liveBtn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,28 +34,28 @@
   text-decoration: none;
 }
 
-.liveBtn:hover{
+.liveBtn:hover {
   transition: 0.2s ease-in-out;
   opacity: 65%;
 }
 
-.btnInfo{
+.btnInfo {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.liveBtn .btnTitle{
+.liveBtn .btnTitle {
   text-align: center;
   font-family: 'Roboto', sans-serif;
 }
 
-.liveBtn .btnLogo{
+.liveBtn .btnLogo {
   text-align: center;
   margin-top: 6px;
 }
 
-.gitHubBtn{
+.gitHubBtn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,24 +64,24 @@
   padding: 5px;
   margin: 0 10px;
   border-radius: 8px;
-  border:  3px solid #1C2128;  
+  border: 3px solid #1C2128;
   color: #575757;
   cursor: pointer;
   text-decoration: none;
 }
 
-.gitHubBtn:hover{
+.gitHubBtn:hover {
   transition: 0.2s ease-in-out;
   opacity: 65%;
 }
 
-.gitHubBtn .btnLogo{
+.gitHubBtn .btnLogo {
   color: #ADBAC7;
   text-align: center;
   margin-top: 6px;
 }
 
-.navIcon{
+.navIcon {
   width: 35px;
   height: 30px;
   margin: 10px 40px;
@@ -89,82 +89,92 @@
   cursor: pointer;
   display: inline-block;
   z-index: 999999;
-  background-color:transparent;
+  background-color: transparent;
 
 }
-.navIcon span{
+
+.navIcon span {
   background-color: black;
   position: absolute;
   border-radius: 2px;
   transition: .3s cubic-bezier(.8, .5, .2, 1.4);
 }
 
-.navIcon span:nth-child(1){
+.navIcon span:nth-child(1) {
   width: 100%;
-  height:  4px;
+  height: 4px;
   display: block;
   top: 0px;
   left: 0px;
 }
-.navIcon span:nth-child(2){
+
+.navIcon span:nth-child(2) {
   width: 100%;
-  height:  4px;
+  height: 4px;
   display: block;
   top: 13px;
   left: 0px;
 }
-.navIcon span:nth-child(3){
+
+.navIcon span:nth-child(3) {
   width: 100%;
-  height:  4px;
+  height: 4px;
   display: block;
   bottom: 0px;
   left: 0px;
 }
-.navIcon:not(.open):hover span:nth-child(1){
+
+.navIcon:not(.open):hover span:nth-child(1) {
   width: 100%;
-  height:  4px;
+  height: 4px;
   display: block;
   top: -2px;
   left: 0px;
   transition: .3s cubic-bezier(.8, .5, .2, 1.4);
 }
-.navIcon:not(.open):hover span:nth-child(2){
+
+.navIcon:not(.open):hover span:nth-child(2) {
   width: 100%;
-  height:  4px;
+  height: 4px;
   display: block;
   top: 13px;
   left: 0px;
   transition: .4s cubic-bezier(.8, .5, .2, 1.4);
 }
-.navIcon:not(.open):hover span:nth-child(3){
+
+.navIcon:not(.open):hover span:nth-child(3) {
   width: 100%;
-  height:  4px;
+  height: 4px;
   display: block;
   bottom: -2px;
   left: 0px;
   transition: .3s cubic-bezier(.8, .5, .2, 1.4);
 }
+
 .navIcon.open {
   transform: rotate(90deg);
 }
-.navIcon.open span:nth-child(1){
-  left:3px;
+
+.navIcon.open span:nth-child(1) {
+  left: 3px;
   top: 12px;
   width: 30px;
   transition: .3s cubic-bezier(.8, .5, .2, 1.4);
   transform: rotate(90deg);
   transition-delay: 150ms;
 }
-.navIcon.open span:nth-child(2){
-  left:2px;
+
+.navIcon.open span:nth-child(2) {
+  left: 2px;
   top: 20px;
   width: 20px;
   transition: .3s cubic-bezier(.8, .5, .2, 1.4);
   transform: rotate(45deg);
   transition-delay: 50ms;
 }
-.navIcon.open span:nth-child(3){
-  left:14px;
+
+.navIcon.open span:nth-child(3) {
+  left: 14px;
   top: 20px;
   width: 20px;
   transition: .3s cubic-bezier(.8, .5, .2, 1.4);
@@ -172,7 +182,7 @@
   transition-delay: 100ms;
 }
 
-.navBarLinks{
+.navBarLinks {
   position: absolute;
   top: -700px;
   left: 0px;
@@ -184,7 +194,7 @@
   background-color: transparent;
 }
 
-.navBarLinks.active{
+.navBarLinks.active {
   z-index: 99999;
   width: 320px;
   height: 640px;
@@ -211,12 +221,12 @@
     transition: all ease 1.2s;
   }
 
-  a:hover{
+  a:hover {
     color: #575757;
   }
 }
 
-.bgInitial{
+.bgInitial {
   background-image: linear-gradient(0deg, #fffcf4 0%, #a1c9de 100%);
   position: absolute;
   width: 100%;
@@ -224,18 +234,18 @@
   z-index: -1;
   top: -2000px;
   left: 0px;
-  transition: all 0.5s ease;
+  transition: all .5s ease;
 }
 
-.bgInitial.active{
+.bgInitial.active {
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   z-index: 100;
-  transition: all 1.2s ease;
+  transition: all.5s ease;
 }
 
-.bodyNoScroll{
+.bodyNoScroll {
   overflow: hidden;
 }
