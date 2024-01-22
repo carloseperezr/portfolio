@@ -1,12 +1,15 @@
 import { ProfilePicContainer } from "../Photo/ProfilePicContainer";
+import React, { forwardRef } from "react";
 import ContactCSS from "./Contact.module.css";
 
-export const ContactContainer = () => {
+const ContactContainer = forwardRef((props, ref) => {
   return (
-    <div className={`${ContactCSS.contactContainer}`}>
+    <div ref={ref} className={`${ContactCSS.contactContainer}`}>
       <div className={`${ContactCSS.contactInfoWrapper}`}>
         <ProfilePicContainer />
       </div>
     </div>
   );
-};
+});
+
+export default ContactContainer;

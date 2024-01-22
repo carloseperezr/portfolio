@@ -1,58 +1,38 @@
-import { BurguerIcon } from "../Buttons/BurguerIcon";
-import BurgerCSS from "../Buttons/Button.module.css";
-import { useState, useEffect } from "react";
+import React from "react";
+import NavBarCSS from "./NavBar.module.css";
 import { Button } from "../Buttons/Button";
 
-export const NavBarLinks = () => {
-  const [clicked, setClicked] = useState(false);
-
-  const handleClick = () => {
-    setClicked(!clicked);
-  };
-
-  useEffect(() => {
-    const body = document.body;
-
-    if (clicked) {
-      // Agregar una clase al cuerpo para deshabilitar el scroll
-      body.classList.add(BurgerCSS.bodyNoScroll);
-    } else {
-      // Eliminar la clase para habilitar el scroll nuevamente
-      body.classList.remove(BurgerCSS.bodyNoScroll);
-    }
-
-    return () => {
-      // Asegurarse de eliminar la clase al desmontar el componente
-      body.classList.remove(BurgerCSS.bodyNoScroll);
-    };
-  }, [clicked]);
-
+export const NavBarLinks = ({
+  scrollToSection,
+  heroRef,
+  projectsRef,
+  aboutRef,
+}) => {
   return (
     <>
-      <div
-        className={`${BurgerCSS.navBarLinks} ${
-          clicked ? BurgerCSS.active : ""
-        }`}
-      >
-        <a onClick={handleClick} className={`${BurgerCSS.navLinks}`} href="">
+      <div className={`${NavBarCSS.navBarLinks}`}>
+        <button
+          onClick={() => scrollToSection(heroRef)}
+          className={`${NavBarCSS.navLink}`}
+        >
           Inicio
-        </a>
-        <a onClick={handleClick} className={`${BurgerCSS.navLinks}`} href="">
+        </button>
+        <button
+          onClick={() => scrollToSection(projectsRef)}
+          className={`${NavBarCSS.navLink}`}
+        >
           Proyectos
-        </a>
-        <a onClick={handleClick} className={`${BurgerCSS.navLinks}`} href="">
+        </button>
+        <button
+          onClick={() => scrollToSection(aboutRef)}
+          className={`${NavBarCSS.navLink}`}
+        >
           Sobre Mi
-        </a>
-        <a href="https://www.linkedin.com/in/carloseperezr/">
+        </button>
+        <a target="_blank" href="https://www.linkedin.com/in/carloseperezr/">
           <Button style="heroBtn" text="Trabajemos" />
         </a>
       </div>
-      <div className={`${BurgerCSS.burguer}`}>
-        <BurguerIcon clicked={clicked} handleClick={handleClick} />
-      </div>
-      <div
-        className={`${BurgerCSS.bgInitial} ${clicked ? BurgerCSS.active : ""}`}
-      ></div>
     </>
   );
 };

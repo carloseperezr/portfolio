@@ -5,17 +5,17 @@
   font-weight: 500;
   font-family: 'Roboto', sans-serif;
   transition: 0.2s ease-in-out;
-  cursor: pointer;
-}
-
-.navBarLogo:hover{
-  color: #024268;
-  transition: 0.2s ease-in-out;
+  cursor: default;
 }
 
 .footerLogo{
   font-size: 68px;
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
+}
 
+@media (max-width: 768px){
+  .navBarLogo{
+    display: none;
+  }
 }

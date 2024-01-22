@@ -32,6 +32,10 @@
   backdrop-filter: blur(5px);
 }
 
+.heroText a{
+  text-decoration: none;
+}
+
 .helloText{
   text-transform: uppercase;
   font-family: 'Nunito', sans-serif;

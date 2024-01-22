@@ -5,8 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: #A1C9DE;
-  background: radial-gradient(at center bottom, #A1C9DE, #FFFCF4);
+  background-color: #FBFAF3;
 }
 
 .infoContainer{
@@ -26,7 +25,7 @@
 
 .infoContainer p{
   font-family: 'Nunito', sans-serif;
-  width: 90%;
+  width: 100%;
   padding: 20px;
   line-height: 30px;
   letter-spacing: 2px;

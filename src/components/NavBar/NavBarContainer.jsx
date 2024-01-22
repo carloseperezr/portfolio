@@ -1,17 +1,35 @@
-import { BurguerIcon } from "../Buttons/BurguerIcon";
 import { Logo } from "../Logo/Logo";
 import classes from "./NavBar.module.css";
 import { NavBarLinks } from "./NavBarLinks";
 
-export const NavBarContainer = () => {
+const NavBarContainer = ({
+  scrollToSection,
+  heroRef,
+  projectsRef,
+  aboutRef,
+  contactRef,
+}) => {
   return (
     <div className={`${classes.navBarContainer}`}>
       <div className={`${classes.logoWrapper}`}>
-        <Logo navBarLogo="navLogo" text="cepro.dev" />
+        <Logo
+          navBarLogo="navLogo"
+          text="cepro.dev"
+          scrollToSection={scrollToSection}
+          heroRef={heroRef}
+        />
       </div>
       <div className={`${classes.linksWrapper}`}>
-        <NavBarLinks />
+        <NavBarLinks
+          scrollToSection={scrollToSection}
+          heroRef={heroRef}
+          projectsRef={projectsRef}
+          aboutRef={aboutRef}
+          contactRef={contactRef}
+        />
       </div>
     </div>
   );
 };
+
+export default NavBarContainer;

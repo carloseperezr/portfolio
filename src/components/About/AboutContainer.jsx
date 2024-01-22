@@ -1,8 +1,9 @@
+import React, { useRef } from "react";
 import AboutCSS from "./About.module.css";
 
-export const AboutContainer = () => {
+const AboutContainer = React.forwardRef((props, ref) => {
   return (
-    <div className={`${AboutCSS.aboutContainer}`}>
+    <div ref={ref} className={`${AboutCSS.aboutContainer}`}>
       <div className={`${AboutCSS.infoContainer}`}>
         <h1>Sobre Mi</h1>
         <p>
@@ -17,4 +18,6 @@ export const AboutContainer = () => {
       </div>
     </div>
   );
-};
+});
+
+export default AboutContainer;

@@ -12,33 +12,11 @@
   overflow: hidden;
 }
 
-.profilePicContainer::before{
-  content: "";
-  position: absolute; 
-  inset: -600px 100px;
-  background-image: linear-gradient(0deg, #DCE9EC 0%, #45565f 100%);
-  transition: 0.5s;
-  animation: animate 4s linear infinite;
-}
-
-.profilePicContainer:hover::before {
-  inset: -20px 0px;
-}
-
-@keyframes animate {
-  0%{
-    transform: rotate(0deg);
-  }
-  100%{
-    transform: rotate(360deg);
-  }
-}
-
 .profilePicContainer::after{
   content: "";
   position: absolute;
   inset: 3px ;
-  background:#C4DCE6;
+  background-image: linear-gradient(0deg, #a1c9de 0%, #fffcf4 100%);
   border-radius: 50%;
   z-index: 1;
 }
@@ -68,10 +46,6 @@
   z-index: 3;
 }
 
-.profilePicContainer:hover .profilePicWrapper img{
-  opacity: 0;
-}
-
 .profilePicWrapper h3{
   position: relative;
   font-size: 20px;
@@ -98,3 +72,5 @@
   transition: 0.2s ease-in-out;
   opacity: 90%;
 }
+
+

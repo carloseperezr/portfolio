@@ -1,3 +1,4 @@
+import React from "react";
 import HeroCSS from "./Hero.module.css";
 import {
   EmojioneWavingHand,
@@ -5,9 +6,9 @@ import {
 } from "../Emoji/Emoji";
 import { Button } from "../Buttons/Button";
 
-export const HeroContainer = () => {
+const HeroContainer = React.forwardRef((props, ref) => {
   return (
-    <div className={`${HeroCSS.heroContainer}`}>
+    <div ref={ref} className={`${HeroCSS.heroContainer}`}>
       <div className={`${HeroCSS.heroWrapper}`}>
         <div className={`${HeroCSS.heroText}`}>
           <p className={`${HeroCSS.helloText}`}>
@@ -22,10 +23,13 @@ export const HeroContainer = () => {
             digitales notables.
           </p>
           <p className={`${HeroCSS.locationText}`}>Bogotá, Col.</p>
-          <Button style="heroBtn" text="Trabajemos" />
+          <a target="_blank" href="https://www.linkedin.com/in/carloseperezr/">
+            <Button style="heroBtn" text="Trabajemos" />
+          </a>
         </div>
         <div className={`${HeroCSS.imgWrapper}`}>
           <img
+            loading="lazy"
             src="https://i.postimg.cc/FskXBfTp/heroimg.png"
             alt="Hero_Sphere"
           />
@@ -33,4 +37,6 @@ export const HeroContainer = () => {
       </div>
     </div>
   );
-};
+});
+
+export default HeroContainer;

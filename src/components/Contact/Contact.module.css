@@ -4,8 +4,6 @@
   justify-content: center;
   width: 100%;
   height: 50vh;
-  background: #A1C9DE;
-  background: radial-gradient(at center top, #A1C9DE, #FFFCF4);
 }
 
 .contactInfoWrapper{
@@ -17,5 +15,4 @@
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
   font-size: 18px;
-
 }

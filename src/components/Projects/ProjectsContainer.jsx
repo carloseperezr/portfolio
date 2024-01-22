@@ -1,9 +1,12 @@
+import React, { useRef } from "react";
 import { ProjectCard } from "./ProjectCard";
 import ProjectsCSS from "./Projects.module.css";
 
-export const ProjectsContainer = () => {
+const ProjectsContainer = React.forwardRef((props, ref) => {
+  const projectsRef = ref || useRef(null);
+
   return (
-    <div className={`${ProjectsCSS.projectsContainer}`}>
+    <div ref={projectsRef} className={`${ProjectsCSS.projectsContainer}`}>
       <div className={`${ProjectsCSS.projectsInfo}`}>
         <h1>Proyectos</h1>
         <p>
@@ -17,7 +20,7 @@ export const ProjectsContainer = () => {
           live={"https://somospaoyale.com/"}
           gitHub={"https://github.com/carloseperezr/somospaoyale"}
           title="Equilibrium"
-          description="Página web y correo electronico elegante y minimalista, donde cada detalle refleja precisión y buen gusto en el desarrollo digital"
+          description="Desarrollo de página web + correo electrónico elegante y minimalista, donde cada detalle refleja precisión y buen gusto en el desarrollo digital."
           skeletonText={false}
           js={true}
           react={true}
@@ -61,4 +64,6 @@ export const ProjectsContainer = () => {
       </div>
     </div>
   );
-};
+});
+
+export default ProjectsContainer;
