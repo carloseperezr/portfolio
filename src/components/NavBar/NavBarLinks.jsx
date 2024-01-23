@@ -7,6 +7,7 @@ export const NavBarLinks = ({
   heroRef,
   projectsRef,
   aboutRef,
+  stackRef,
 }) => {
   return (
     <>
@@ -28,6 +29,12 @@ export const NavBarLinks = ({
           className={`${NavBarCSS.navLink}`}
         >
           Sobre Mi
+        </button>
+        <button
+          onClick={() => scrollToSection(stackRef)}
+          className={`${NavBarCSS.navLink}`}
+        >
+          Stack
         </button>
         <a target="_blank" href="https://www.linkedin.com/in/carloseperezr/">
           <Button style="heroBtn" text="Trabajemos" />

@@ -5,6 +5,7 @@ import ProjectsContainer from "./components/Projects/ProjectsContainer";
 import HeroContainer from "./components/Hero/HeroContainer";
 import AboutContainer from "./components/About/AboutContainer";
 import ContactContainer from "./components/Contact/ContactContainer";
+import StackContainer from "./components/Stack/StackContainer";
 
 const App = () => {
   const [activeSection, setActiveSection] = useState("");
@@ -13,6 +14,7 @@ const App = () => {
   const projectsRef = useRef(null);
   const aboutRef = useRef(null);
   const contactRef = useRef(null);
+  const stackRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,6 +24,7 @@ const App = () => {
         { ref: projectsRef, name: "projects" },
         { ref: aboutRef, name: "about" },
         { ref: contactRef, name: "contact" },
+        { ref: stackRef, name: "stack" },
       ];
 
       let found = false;
@@ -49,7 +52,7 @@ const App = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [heroRef, projectsRef, aboutRef, contactRef]);
+  }, [heroRef, projectsRef, aboutRef, contactRef, stackRef]);
 
   const scrollToSection = (sectionRef) => {
     if (sectionRef && sectionRef.current) {
@@ -65,11 +68,13 @@ const App = () => {
         projectsRef={projectsRef}
         aboutRef={aboutRef}
         contactRef={contactRef}
+        stackRef={stackRef}
       />
       <HeroContainer ref={heroRef} />
       <ProjectsContainer ref={projectsRef} />
       <AboutContainer ref={aboutRef} />
       <ContactContainer ref={contactRef} />
+      <StackContainer ref={stackRef} />
     </>
   );
 };

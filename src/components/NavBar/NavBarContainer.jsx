@@ -8,6 +8,7 @@ const NavBarContainer = ({
   projectsRef,
   aboutRef,
   contactRef,
+  stackRef,
 }) => {
   return (
     <div className={`${classes.navBarContainer}`}>
@@ -26,6 +27,7 @@ const NavBarContainer = ({
           projectsRef={projectsRef}
           aboutRef={aboutRef}
           contactRef={contactRef}
+          stackRef={stackRef}
         />
       </div>
     </div>
