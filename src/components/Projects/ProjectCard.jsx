@@ -25,7 +25,7 @@ export const ProjectCard = ({
       {skeleton ? (
         <img src="https://htmlcolorcodes.com/assets/images/colors/light-gray-color-solid-background-1920x1080.png" />
       ) : (
-        <img src="https://i.postimg.cc/d1c0vy29/Equilibrium-Banner.png" />
+        <img src={img} />
       )}
       <div className={`${ProjectsCSS.stackInfo}`}>
         <div className={`${ProjectsCSS.stackWrapper}`}>

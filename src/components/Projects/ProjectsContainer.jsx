@@ -20,6 +20,7 @@ const ProjectsContainer = React.forwardRef((props, ref) => {
           live={"https://somospaoyale.com/"}
           gitHub={"https://github.com/carloseperezr/somospaoyale"}
           title="Equilibrium"
+          img={"https://i.postimg.cc/d1c0vy29/Equilibrium-Banner.pngnpm"}
           description="Desarrollo de página web + correo electrónico elegante y minimalista, donde cada detalle refleja precisión y buen gusto en el desarrollo digital."
           skeletonText={false}
           js={true}
@@ -27,11 +28,15 @@ const ProjectsContainer = React.forwardRef((props, ref) => {
           css={true}
         />
         <ProjectCard
-          title="Comming Soon"
-          description={"Proyecto de prueba"}
-          skeletonText={"Comming soon"}
-          img={false}
-          skeleton={true}
+          live={"https://rcautoacc.com/"}
+          gitHub={"https://github.com/carloseperezr/RCAcc"}
+          title="RCAutoacc"
+          img={"https://i.postimg.cc/76QWK8Fn/Screenshot-2024-01-25-143359.png"}
+          description="Desarrollo de página web para RCAutoacc, empresa matriz de accesorios automovilísticos en Venezuela."
+          skeletonText={false}
+          js={true}
+          react={true}
+          css={true}
         />
         <ProjectCard
           title="Comming Soon"
