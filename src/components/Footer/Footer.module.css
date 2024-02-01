@@ -1,10 +1,36 @@
 .footerContainer{
-  width: 100%;
-  height: 120px;
-  background-color: #E3EDEE;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  font-family: 'Quicksand', sans-serif;
+  justify-content: start;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color: #FBFAF3;
+}
 
+.firstColumn{
+  width: auto;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow-y: hidden;
+  padding-top: 100px;
+}
+
+.firstColumn img{
+  width: 200px;
+  height: 200px;
+}
+
+.Footerdetails{
+  display: flex;
+  align-items: center;
+}
+
+.firstColumn small{
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  padding-left: 60px;
+  padding-right: 10px;
 }

@@ -30,10 +30,10 @@
 }
 
 .navLink {
-  padding: 20px;
-  margin: 0px 10px;
+  padding: 10px 20px;
+  margin: 0px 5px;
   text-decoration: none;
-  color: #81776F;
+  color: #5f5852b5;
   background-color: transparent;
   font-weight: bold;
   font-family: 'Quicksand', sans-serif;

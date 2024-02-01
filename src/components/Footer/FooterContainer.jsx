@@ -1,10 +1,20 @@
+import React from "react";
+import FooterCSS from "./Footer.module.css";
+import FooterIMG from "../../assets/footerIMG.png";
+import { ImHeart } from "react-icons/im";
 import { Logo } from "../Logo/Logo";
-import classes from "./Footer.module.css";
 
 export const FooterContainer = () => {
   return (
-    <div className={`${classes.footerContainer}`}>
-      <Logo text="cepro.dev" footerLogo="footLogo" />
+    <div className={`${FooterCSS.footerContainer}`}>
+      <div className={`${FooterCSS.firstColumn}`}>
+        <Logo text={"cepro.dev"} navBarLogo={"foo"} />
+        <div className={`${FooterCSS.Footerdetails}`}>
+          <small>made with love</small>
+          <ImHeart color={"red"} />
+        </div>
+        <img src={FooterIMG} alt="Footer IMG" />
+      </div>
     </div>
   );
 };

@@ -42,12 +42,14 @@
   font-weight: bold;
   letter-spacing: 2px;
   font-size: 24px;
+  color: #3C3C3B;
 }
 
 .heroText h1{
   padding: 20px 0px ;
   width: 100%;
   font-size: 80px;
+  color: #3C3C3B;
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -65,7 +67,7 @@
   line-height: 30px;
   letter-spacing: 2px;
   font-size: 20px;
-  color: #73655C;
+  color: #7d7d7d;
 }
 
 .locationText{
@@ -81,11 +83,30 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60%;
+}
+
+.callToAction{
+  display: flex;
+  align-items: center; 
+}
+
+.callToAction a:last-of-type{
+  margin-left: 20px;
+  margin-top: 5px;
 }
 
 .imgWrapper img{
   max-width: 100%;
+}
+
+.linkedIN{
+  color: #3C3C3B;
+  transition: .2s ease-in-out color;
+}
+
+.linkedIN:hover{
+  transition: .2s ease-in-out color;
+  color: #0A66C2;
 }
 
 @media (max-width: 768px){

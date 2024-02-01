@@ -14,7 +14,7 @@ const NavBarContainer = ({
     <div className={`${classes.navBarContainer}`}>
       <div className={`${classes.logoWrapper}`}>
         <Logo
-          navBarLogo="navLogo"
+          navBarLogo="nav"
           text="cepro.dev"
           scrollToSection={scrollToSection}
           heroRef={heroRef}

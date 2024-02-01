@@ -6,6 +6,7 @@ import HeroContainer from "./components/Hero/HeroContainer";
 import AboutContainer from "./components/About/AboutContainer";
 import ContactContainer from "./components/Contact/ContactContainer";
 import StackContainer from "./components/Stack/StackContainer";
+import { FooterContainer } from "./components/Footer/FooterContainer";
 
 const App = () => {
   const [activeSection, setActiveSection] = useState("");
@@ -75,6 +76,7 @@ const App = () => {
       <AboutContainer ref={aboutRef} />
       <ContactContainer ref={contactRef} />
       <StackContainer ref={stackRef} />
+      <FooterContainer />
     </>
   );
 };

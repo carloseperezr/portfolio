@@ -1,10 +1,13 @@
 import React from "react";
 import HeroCSS from "./Hero.module.css";
+import { Button } from "../Buttons/Button";
+import Lottie from "lottie-react";
+import animationHero from "../../assets/heroAnimation.json";
+import { ImLinkedin } from "react-icons/im";
 import {
   EmojioneWavingHand,
   TwemojiManTechnologistLightSkinTone,
 } from "../Emoji/Emoji";
-import { Button } from "../Buttons/Button";
 
 const HeroContainer = React.forwardRef((props, ref) => {
   return (
@@ -23,16 +26,25 @@ const HeroContainer = React.forwardRef((props, ref) => {
             digitales notables.
           </p>
           <p className={`${HeroCSS.locationText}`}>Bogotá, Col.</p>
-          <a target="_blank" href="https://www.linkedin.com/in/carloseperezr/">
-            <Button style="heroBtn" text="Trabajemos" />
-          </a>
+          <div className={`${HeroCSS.callToAction}`}>
+            <a
+              href="mailto:perezcarlos1580@gmail.com?subject=Trabajemos"
+              target="_blank"
+            >
+              <Button style={"herobtn"} text={"Trabajemos"}>
+                Trabajemos
+              </Button>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/carloseperezr/"
+              target="_blank"
+            >
+              <ImLinkedin className={`${HeroCSS.linkedIN}`} size={"52px"} />
+            </a>
+          </div>
         </div>
         <div className={`${HeroCSS.imgWrapper}`}>
-          <img
-            loading="lazy"
-            src="https://i.postimg.cc/FskXBfTp/heroimg.png"
-            alt="Hero_Sphere"
-          />
+          <Lottie animationData={animationHero}></Lottie>
         </div>
       </div>
     </div>
