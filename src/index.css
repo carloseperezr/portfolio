@@ -1,17 +1,17 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Yeseva+One&family=Quicksand:wght@300;400;500;600;700&display=swap');
-
 *{
   margin: 0;
-  padding: 0;
-  
+  padding: 0;  
 }
+
+::-webkit-scrollbar{
+  width: 0px;
+}
+
 
 /* 
 font-family: 'Nunito', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Quicksand', sans-serif;
-
-bg #FBFAF3
 
 */

@@ -21,7 +21,7 @@ const ProjectsContainer = React.forwardRef((props, ref) => {
           gitHub={"https://github.com/carloseperezr/somospaoyale"}
           title="Equilibrium"
           img={"https://i.postimg.cc/d1c0vy29/Equilibrium-Banner.pngnpm"}
-          description="Desarrollo de página web + correo electrónico elegante y minimalista, donde cada detalle refleja precisión y buen gusto en el desarrollo digital."
+          description='"Equilibrium" creada con ReactJS y CSS Modules. Una mezcla de diseño y funcionalidad, esta página web fusiona la potencia de React con la modularidad de CSS para brindarte una buena experiencia de uso.'
           skeletonText={false}
           js={true}
           react={true}
@@ -32,39 +32,11 @@ const ProjectsContainer = React.forwardRef((props, ref) => {
           gitHub={"https://github.com/carloseperezr/RCAcc"}
           title="RCAutoacc"
           img={"https://i.postimg.cc/76QWK8Fn/Screenshot-2024-01-25-143359.png"}
-          description="Desarrollo de página web para RCAutoacc, empresa matriz de accesorios automovilísticos en Venezuela."
+          description="Explora la web de RCAutoacc, impulsada por ReactJS con elegantes implementaciones de hooks y refs. Descubre accesorios para autos de manera fluida y eficiente en una experiencia de usuario excepcional."
           skeletonText={false}
           js={true}
           react={true}
           css={true}
-        />
-        <ProjectCard
-          title="Comming Soon"
-          description="Proyecto de prueba"
-          skeletonText="Comming soon"
-          img={false}
-          skeleton={true}
-        />
-        <ProjectCard
-          title="Comming Soon"
-          description="Proyecto de prueba"
-          skeletonText="Comming soon"
-          img={false}
-          skeleton={true}
-        />
-        <ProjectCard
-          title="Comming Soon"
-          description="Proyecto de prueba"
-          skeletonText="Comming soon"
-          img={false}
-          skeleton={true}
-        />
-        <ProjectCard
-          title="Comming Soon"
-          description="Proyecto de prueba"
-          skeletonText="Comming soon"
-          img={false}
-          skeleton={true}
         />
       </div>
     </div>

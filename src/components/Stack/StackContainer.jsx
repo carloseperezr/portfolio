@@ -1,10 +1,11 @@
+import React from "react";
 import StackCSS from "./Stack.module.css";
 import { StackCard } from "./StackCard";
 import Marquee from "react-fast-marquee";
 
-const StackContainer = () => {
+const StackContainer = React.forwardRef((props, ref) => {
   return (
-    <div className={`${StackCSS.stackContainer}`}>
+    <div ref={ref} className={`${StackCSS.stackContainer}`}>
       <div className={`${StackCSS.stackInfo}`}>
         <div>
           <h2>Stack</h2>
@@ -72,6 +73,6 @@ const StackContainer = () => {
       </div>
     </div>
   );
-};
+});
 
 export default StackContainer;
