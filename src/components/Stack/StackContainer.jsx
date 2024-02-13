@@ -27,7 +27,7 @@ const StackContainer = React.forwardRef((props, ref) => {
               />
               <StackCard
                 img={
-                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
                 }
                 alt="Tailwind"
               />
@@ -66,6 +66,12 @@ const StackContainer = React.forwardRef((props, ref) => {
                   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
                 }
                 alt="GitHub"
+              />
+              <StackCard
+                img={
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+                }
+                alt="Firebase"
               />
             </Marquee>
           </div>

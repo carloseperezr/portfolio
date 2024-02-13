@@ -21,7 +21,7 @@ const ProjectsContainer = React.forwardRef((props, ref) => {
           gitHub={"https://github.com/carloseperezr/somospaoyale"}
           title="Equilibrium"
           img={"https://i.postimg.cc/d1c0vy29/Equilibrium-Banner.pngnpm"}
-          description='"Equilibrium" creada con ReactJS y CSS Modules. Una mezcla de diseño y funcionalidad, esta página web fusiona la potencia de React con la modularidad de CSS para brindarte una buena experiencia de uso.'
+          description="Creada con ReactJS y CSS Modules. Una mezcla de diseño y funcionalidad, esta página web fusiona la potencia de React con la modularidad de CSS para brindarte una buena experiencia de uso."
           skeletonText={false}
           js={true}
           react={true}
@@ -32,7 +32,18 @@ const ProjectsContainer = React.forwardRef((props, ref) => {
           gitHub={"https://github.com/carloseperezr/RCAcc"}
           title="RCAutoacc"
           img={"https://i.postimg.cc/76QWK8Fn/Screenshot-2024-01-25-143359.png"}
-          description="Explora la web de RCAutoacc, impulsada por ReactJS con elegantes implementaciones de hooks y refs. Descubre accesorios para autos de manera fluida y eficiente en una experiencia de usuario excepcional."
+          description="RCAutoacc, impulsada por ReactJS con elegantes implementaciones de hooks y refs. Descubre accesorios para autos de manera fluida y eficiente en una experiencia de usuario excepcional."
+          skeletonText={false}
+          js={true}
+          react={true}
+          css={true}
+        />
+        <ProjectCard
+          live={"https://psico-eze.vercel.app/"}
+          gitHub={"https://github.com/carloseperezr/psico_eze"}
+          title="Psico.Eze"
+          img={"https://i.postimg.cc/x1X9cC16/psicoeze.png"}
+          description="PsicoEze, psicoterapeuta online, página de servicios de salud, desarrollada con ReactJS, React Router y Hooks, acompañada de módulos CSS para darle un estilo único, característico y funcional."
           skeletonText={false}
           js={true}
           react={true}
