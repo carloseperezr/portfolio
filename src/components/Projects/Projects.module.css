@@ -63,10 +63,11 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  width: 90%;
+  width: 70%;
 }
 
 .projectCard{
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   width: 500px;
@@ -75,12 +76,7 @@
   border: 4px solid #899CA3;
   margin: 20px 20px;
   transition: 0.2s ease-in-out;
-}
-
-.projectCard:hover{
-  transition: 0.2s ease-in-out;
-  transform: translate(3px, -3px);
-  box-shadow: -12px 10px  #0E4165;
+  box-shadow: -12px 10px  #3C3C3B;
 }
 
 .projectCard img{

@@ -56,6 +56,20 @@
   margin-left: 30px;
 }
 
+.languages{
+  color: #5f5852b5;
+  cursor: pointer;
+  padding-right: 50px;
+  margin: 0px 5px;
+  transition: all ease .3s;
+}
+
+.languages:hover{
+  color: #272727;
+  transition: all ease .3s;
+}
+
+
 @media (max-width: 768px){
   .logoWrapper{
     display: none;
@@ -81,5 +95,12 @@
     .navLink{
       padding: 8px;
     }
+
+    .languages{
+      color: #5f5852b5;
+      padding-right: 5px;
+    }
+
+  
   }
 

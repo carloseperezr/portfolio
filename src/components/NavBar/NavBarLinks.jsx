@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import NavBarCSS from "./NavBar.module.css";
 import { Button } from "../Buttons/Button";
+import LanguageSelector from "../Languages/LanguageSelector";
+import { useTranslation } from "react-i18next";
+import { TfiWorld } from "react-icons/tfi";
 
 export const NavBarLinks = ({
   scrollToSection,
@@ -9,6 +12,38 @@ export const NavBarLinks = ({
   aboutRef,
   stackRef,
 }) => {
+  const { t, i18n } = useTranslation();
+
+  const languages = [
+    { code: "en", name: "En" },
+    { code: "es", name: "Es" },
+  ];
+
+  const [openLang, setOpenLang] = useState(false);
+  const containerRef = useRef(null);
+
+  const handleOpen = () => {
+    setOpenLang(!openLang);
+  };
+
+  const handleClickOutside = (event) => {
+    if (containerRef.current && !containerRef.current.contains(event.target)) {
+      setOpenLang(false);
+    }
+  };
+
+  useEffect(() => {
+    if (openLang) {
+      document.addEventListener("click", handleClickOutside);
+    } else {
+      document.removeEventListener("click", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [openLang]);
+
   return (
     <>
       <div className={`${NavBarCSS.navBarLinks}`}>
@@ -16,29 +51,37 @@ export const NavBarLinks = ({
           onClick={() => scrollToSection(heroRef)}
           className={`${NavBarCSS.navLink}`}
         >
-          Inicio
+          {t("home")}
         </button>
         <button
           onClick={() => scrollToSection(projectsRef)}
           className={`${NavBarCSS.navLink}`}
         >
-          Proyectos
+          {t("projects")}
         </button>
         <button
           onClick={() => scrollToSection(aboutRef)}
           className={`${NavBarCSS.navLink}`}
         >
-          Sobre Mi
+          {t("about")}
         </button>
         <button
           onClick={() => scrollToSection(stackRef)}
           className={`${NavBarCSS.navLink}`}
         >
-          Stack
+          {t("stack")}
         </button>
         <a target="_blank" href="https://www.linkedin.com/in/carloseperezr/">
-          <Button style="heroBtn" text="Trabajemos" />
+          <Button style="heroBtn" text={t("hireMeBtn")} />
         </a>
+        <div className={`${NavBarCSS.languages}`} ref={containerRef}>
+          <TfiWorld size={"18px"} onClick={handleOpen} />
+          {openLang && (
+            <div className={NavBarCSS.container}>
+              <LanguageSelector />
+            </div>
+          )}
+        </div>
       </div>
     </>
   );

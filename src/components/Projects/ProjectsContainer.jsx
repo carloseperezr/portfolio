@@ -1,19 +1,22 @@
 import React, { useRef } from "react";
 import { ProjectCard } from "./ProjectCard";
 import ProjectsCSS from "./Projects.module.css";
+import { useTranslation } from "react-i18next";
 
 const ProjectsContainer = React.forwardRef((props, ref) => {
   const projectsRef = ref || useRef(null);
 
+  const { t, i18 } = useTranslation();
+
+  const languages = [
+    { code: "en", name: "En" },
+    { code: "es", name: "Es" },
+  ];
   return (
     <div ref={projectsRef} className={`${ProjectsCSS.projectsContainer}`}>
       <div className={`${ProjectsCSS.projectsInfo}`}>
-        <h1>Proyectos</h1>
-        <p>
-          Con pasión he creado experiencias digitales notables, fusionando cada
-          detalle con el buen gusto, lo que define mí enfoque distintivo en cada
-          proyecto realizado.
-        </p>
+        <h1>{t("projectsTitle")}</h1>
+        <p>{t("projectsInfo")}</p>
       </div>
       <div className={`${ProjectsCSS.cardWrapper}`}>
         <ProjectCard
@@ -21,7 +24,7 @@ const ProjectsContainer = React.forwardRef((props, ref) => {
           gitHub={"https://github.com/carloseperezr/somospaoyale"}
           title="Equilibrium"
           img={"https://i.postimg.cc/d1c0vy29/Equilibrium-Banner.pngnpm"}
-          description="Creada con ReactJS y CSS Modules. Una mezcla de diseño y funcionalidad, esta página web fusiona la potencia de React con la modularidad de CSS para brindarte una buena experiencia de uso."
+          description={t("projectsEquilibrium")}
           skeletonText={false}
           js={true}
           react={true}
@@ -32,7 +35,7 @@ const ProjectsContainer = React.forwardRef((props, ref) => {
           gitHub={"https://github.com/carloseperezr/RCAcc"}
           title="RCAutoacc"
           img={"https://i.postimg.cc/76QWK8Fn/Screenshot-2024-01-25-143359.png"}
-          description="RCAutoacc, impulsada por ReactJS con elegantes implementaciones de hooks y refs. Descubre accesorios para autos de manera fluida y eficiente en una experiencia de usuario excepcional."
+          description={t("projectsRCAcc")}
           skeletonText={false}
           js={true}
           react={true}
@@ -43,7 +46,18 @@ const ProjectsContainer = React.forwardRef((props, ref) => {
           gitHub={"https://github.com/carloseperezr/psico_eze"}
           title="Psico.Eze"
           img={"https://i.postimg.cc/x1X9cC16/psicoeze.png"}
-          description="PsicoEze, psicoterapeuta online, página de servicios de salud, desarrollada con ReactJS, React Router y Hooks, acompañada de módulos CSS para darle un estilo único, característico y funcional."
+          description={t("projectsPsicoEze")}
+          skeletonText={false}
+          js={true}
+          react={true}
+          css={true}
+        />
+        <ProjectCard
+          live={"https://easyweb-agency.vercel.app/"}
+          gitHub={"https://github.com/carloseperezr/portfolio"}
+          title="EasyWeb"
+          img={"https://i.postimg.cc/pL6pnvtm/easyWeb.png"}
+          description={t("projectsEasyWeb")}
           skeletonText={false}
           js={true}
           react={true}

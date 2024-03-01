@@ -1,0 +1,40 @@
+.container{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 4.5rem;
+  right: 1.5rem;
+  width: 50px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 2px solid #1C2128;
+  opacity: 1;
+  transition: 0.2s ease-in-out all;
+}
+
+.invisible{
+  opacity: 0;
+  transition: 0.2s ease-in-out all;
+}
+
+.container ul{
+  list-style: none;
+}
+
+.container button{
+  padding: 10px 0px;
+  border: none;
+  cursor: pointer;
+  color: #5f5852b5;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bolder;
+}
+
+.container button:hover{
+  transition: all 0.3s ease-in-out;
+  color: #3C3C3B;
+}

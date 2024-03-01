@@ -1,20 +1,20 @@
 import React, { useRef } from "react";
 import AboutCSS from "./About.module.css";
+import { useTranslation } from "react-i18next";
 
 const AboutContainer = React.forwardRef((props, ref) => {
+  const { t, i18n } = useTranslation();
+
+  const languages = [
+    { code: "en", name: "En" },
+    { code: "es", name: "Es" },
+  ];
+
   return (
     <div ref={ref} className={`${AboutCSS.aboutContainer}`}>
       <div className={`${AboutCSS.infoContainer}`}>
-        <h1>Sobre Mi</h1>
-        <p>
-          ¡Hola nuevamente! quiero contarte un poco más de mi, soy un
-          programador especializado en JavaScript, ReactJS y React Native. Mi
-          enfoque colaborativo y habilidades de comunicación me permiten
-          integrarme fácilmente en equipos de desarrollo, mientras que mi
-          dedicación a los detalles impulsa la excelencia en cada proyecto.
-          Apasionado por resolver problemas, disfruto enfrentar nuevos desafíos
-          en el mundo del desarrollo de software.
-        </p>
+        <h1>{t("aboutTitle")}</h1>
+        <p>{t("aboutInfo")}</p>
       </div>
     </div>
   );
